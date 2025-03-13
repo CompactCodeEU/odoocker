@@ -12,6 +12,7 @@ services:
         - ENTERPRISE_ADDONS
         - GITHUB_USER
         - GITHUB_ACCESS_TOKEN
+        - ENTERPRISE_GIT_BRANCH
         - THIRD_PARTY_ADDONS
         - LOG_PATH
         - USE_REDIS
