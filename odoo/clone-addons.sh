@@ -26,7 +26,7 @@ clone_and_copy_modules() {
     # Clone and copy logic for enterprise repository
     if [[ $repo_type == "enterprise" ]]; then
         if [[ ! -d "${ENTERPRISE_ADDONS}" ]] && [ -n "$GITHUB_USER" ] && [ -n "$GITHUB_ACCESS_TOKEN" ]; then
-            $clone_cmd --depth 1 --branch ${ODOO_TAG} --single-branch --no-tags
+            $clone_cmd --depth 1 --branch ${ENTERPRISE_GIT_BRANCH} --single-branch --no-tags
         fi
     else
         # Determine if any module has a true condition
@@ -44,7 +44,7 @@ clone_and_copy_modules() {
 
         # Clone the repo if should_clone is true and it's not already cloned
         if [[ $should_clone == true && ! -d "$repo_name" ]]; then
-            $clone_cmd --depth 1 --branch ${ODOO_TAG} --single-branch --no-tags
+            $clone_cmd --depth 1 --branch ${ENTERPRISE_GIT_BRANCH} --single-branch --no-tags
         fi
 
         # Copy the modules if the condition is true
