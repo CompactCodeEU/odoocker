@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -o pipefail
 
 # Source environment variables
 set -a

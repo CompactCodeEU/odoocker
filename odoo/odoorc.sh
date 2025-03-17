@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -o pipefail
 
 # Define the path to the example configuration file
 TEMPLATE_CONF="odoo.conf"

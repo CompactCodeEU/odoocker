@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -o pipefail
 
 while IFS='=' read -r key value || [[ -n $key ]]; do
     # Skip comments and empty lines
