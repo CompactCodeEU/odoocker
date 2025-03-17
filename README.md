@@ -71,6 +71,7 @@ APP_ENV=debug
 INIT=
 UPDATE=my_custom_addon
 LOAD=base,web
+WORKING_DIRECTORY=${PWD}
 WORKERS=2
 DEV_MODE=reload,qweb
 DOMAIN=erp.odoocker.test
