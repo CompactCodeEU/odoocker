@@ -11,3 +11,7 @@ docker-compose.override.yml
 __pycache__
 
 .idea
+
+odoo/custom-addons/*
+odoo/addons/*
+odoo/enterprise/*
