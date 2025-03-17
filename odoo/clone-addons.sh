@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -o pipefail
 
 # Function to construct the clone command
 construct_clone_command() {
