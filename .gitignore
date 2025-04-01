@@ -19,3 +19,5 @@ odoo/custom-addons/*
 !odoo/custom-addons/.pre-commit-config.yaml
 odoo/addons/*
 odoo/enterprise/*
+
+.qodo
