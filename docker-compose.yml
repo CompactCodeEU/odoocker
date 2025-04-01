@@ -24,6 +24,8 @@ services:
       - ./odoo/extra-addons:${EXTRA_ADDONS}
       - ./odoo/custom-addons:${CUSTOM_ADDONS}
       - ./odoo/entrypoint.sh:/entrypoint.sh
+      - odoo-addons:${ROOT_PATH}/addons
+      - odoo-enterprise:${ROOT_PATH}/enterprise
     environment:
       - HOST=${DB_HOST}
       - PORT=${DB_PORT}
@@ -217,6 +219,18 @@ volumes:
   vhost:
   certs:
   acme:
+  odoo-addons:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${WORKING_DIRECTORY}/odoo/addons
+      o: bind
+  odoo-enterprise:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${WORKING_DIRECTORY}/odoo/enterprise
+      o: bind
 
 networks:
   internal:
