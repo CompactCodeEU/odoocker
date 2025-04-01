@@ -81,6 +81,8 @@ DOMAIN=erp.odoocker.test
 GITHUB_USER=odoocker
 GITHUB_ACCESS_TOKEN=ghp_token
 
+ENTERPRISE_GIT_BRANCH=
+
 # Database
 ADMIN_PASSWD=odoo
 DB_HOST=postgres (container or external host)
