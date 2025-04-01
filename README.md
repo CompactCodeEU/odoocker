@@ -42,7 +42,7 @@ In essence, Odoocker isn't just another tool, it's a philosophy. So, whether you
 
 1. **Clone and Configure**:
 ```
-git clone git@github.com:odoocker/odoocker.git
+git clone https://github.com/CompactCodeEU/odoocker.git
 cd odoocker
 cp .env.example .env && cp docker-compose.override.local.yml docker-compose.override.yml
 ```

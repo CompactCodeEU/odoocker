@@ -12,3 +12,10 @@ __pycache__
 
 # Ignores upgrade files
 upgrade/
+
+.idea
+
+odoo/custom-addons/*
+!odoo/custom-addons/.pre-commit-config.yaml
+odoo/addons/*
+odoo/enterprise/*
